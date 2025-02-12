@@ -1,0 +1,91 @@
+.card:not(.hero .card) {
+  border: 2px solid #000;
+}
+
+.hero .card .image {
+  width: 100%;
+  background: #ddd;
+}
+.card .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.card-body:not(.hero .card-body) {
+  padding: 0.5rem 0.8rem;
+}
+.card .image {
+  background: #ddd;
+  width: 100%;
+  height: 200px;
+  aspect-ratio: 16 / 9;
+}
+.card-body a h2,
+.card-body .description {
+  display: -webkit-box;
+  width: 100%;
+  line-clamp: 3;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-body a h2 {
+  font-size: 1.35rem;
+}
+.card-body .description {
+  margin-bottom: 0.5rem;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+}
+
+.card-body .meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: -0.35rem;
+}
+.meta .source {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+  text-align: right;
+}
+.meta .date {
+  width: 100%;
+}
+.card-body a h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.card-body .description {
+  font-size: 1.025rem;
+}
+.card-body .share {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  width: fit-content;
+}
+.card-body .share:focus-visible {
+  outline-offset: 0.3rem;
+  outline: 2px dashed #000;
+}
+.card-body .share:hover {
+  border-bottom: 2px solid #000;
+}
+.card-body a:focus-visible,
+.card-body a h2:hover {
+  text-decoration: underline;
+}

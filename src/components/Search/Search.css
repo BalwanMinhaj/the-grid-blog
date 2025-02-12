@@ -1,0 +1,36 @@
+.search-container {
+  position: relative;
+  width: 100%;
+  border: 2px solid #151515;
+}
+.search-container input {
+  padding: 0.5rem 1rem 0.5rem 2.2rem;
+  width: 100%;
+}
+.search-container:has(input:focus-visible) {
+  border-style: dashed;
+}
+.search-container input::-webkit-search-cancel-button {
+  position: relative;
+  right: -0.5rem;
+  -webkit-appearance: none;
+  height: 1rem;
+  width: 1rem;
+  background: url(https://pro.fontawesome.com/releases/v5.10.0/svgs/light/times.svg)
+    no-repeat 50% 50%;
+  background-size: contain;
+  cursor: pointer;
+}
+.search-container input::placeholder {
+  color: #555;
+}
+.search-container .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0.5rem;
+  color: #555;
+}
+.search-container:has(input:focus) .icon {
+  color: #000;
+}

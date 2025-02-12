@@ -1,0 +1,23 @@
+/* https://css-loaders.com/filling/ 
+#13*/
+.loader {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0000;
+  -webkit-text-stroke: 1px #000;
+  background: conic-gradient(#000 0 0) -1ch/1ch 100% no-repeat text;
+  animation: l13 2s steps(8, jump-none) infinite;
+}
+.loader:before {
+  content: "Loading";
+}
+@keyframes l13 {
+  to {
+    background-position: 100%;
+  }
+}

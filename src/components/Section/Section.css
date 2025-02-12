@@ -1,0 +1,57 @@
+.card-section:not(.hero .card-section) {
+  margin-top: 1rem;
+  gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.title {
+  position: relative;
+  padding-left: 1rem;
+  text-transform: capitalize;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: #ca2222;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.header .view-more {
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.025rem;
+}
+
+.section:not(.section.category) .header .view-more {
+  display: none;
+}
+
+.section:not(.search, .category-page, :last-child) .card-section {
+  border-bottom: 2px dotted #000;
+  margin-bottom: 1rem;
+}
+
+/* Load More Button */
+.load-more {
+  font-size: 1.125rem;
+  display: flex;
+  margin: 0 auto 1rem;
+}
+.load-more:focus-within {
+  outline: 2px dashed #000;
+  padding: 0.2rem 0.5rem;
+  outline-offset: 0.3rem;
+}
