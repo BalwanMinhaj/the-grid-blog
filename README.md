@@ -1,6 +1,8 @@
 # The Grid Blog
 The Grid Blog is a modern web application for sharing and reading blog posts across the web. It is built with React and NEWSAPI.org 's API.
 
+<mark style='background-color: #ff483b'>This website can not be live, because of the API's limitation.</mark>
+
 ## Features
 - Share posts on social media
 - Responsive design
